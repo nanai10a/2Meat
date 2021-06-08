@@ -24,12 +24,12 @@
   - http ([Next.js](https://github.com/vercel/next.js)) `-> Vercel`
   - Discord
     - Bot ([serenity](https://github.com/serenity-rs/serenity)) `-> GCE`
-    - Webhook ([hhooking](https://github.com/Nanai10a/hhooking)) `-> `
-    - Slash Commands ([hhooking](https://github.com/Nanai10a/hhooking)) `-> `
+    - Webhook ([hhooking](https://github.com/Nanai10a/hhooking)) `-> GCF`
+    - Slash Commands ([hhooking](https://github.com/Nanai10a/hhooking)) `-> GCF`
   - Twitter
-    - REST ([egg-mode](https://github.com/egg-mode-rs/egg-mode)?) `-> `
+    - REST ([egg-mode](https://github.com/egg-mode-rs/egg-mode)?) `-> GCE`
     - Webhook ( 独自lib? ) `-> `
-- Backend
+- Backend `-> GCE`
   - http ([warp](https://github.com/seanmonstar/warp))
     - REST ([warp](https://github.com/seanmonstar/warp))
     - GraphQL ([juniper, juniper_warp](https://github.com/graphql-rust/juniper))
@@ -38,3 +38,5 @@
   - MongoDB ([mongodb](https://github.com/mongodb/mongo-rust-driver)) `-> MongoDB Atlas`
 - Auth
   - ( 独自lib? ) `-> `
+
+GCEにdeployされる小systemはdocker-composeによって統括管理され, 維持を行う.
