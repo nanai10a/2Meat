@@ -21,20 +21,20 @@
 ### 詳細
 
 - Frontend
-  - http (Next.js) `-> Vercel`
+  - http ([Next.js](https://github.com/vercel/next.js)) `-> Vercel`
   - Discord
-    - Bot (serenity) `-> GCE`
-    - Webhook (hhooking) `-> `
-    - Slash Commands (hhooking) `-> `
+    - Bot ([serenity](https://github.com/serenity-rs/serenity)) `-> GCE`
+    - Webhook ([hhooking](https://github.com/Nanai10a/hhooking)) `-> `
+    - Slash Commands ([hhooking](https://github.com/Nanai10a/hhooking)) `-> `
   - Twitter
-    - REST (egg-mode?) `-> `
+    - REST ([egg-mode](https://github.com/egg-mode-rs/egg-mode)?) `-> `
     - Webhook ( 独自lib? ) `-> `
 - Backend
-  - http (warp)
-    - REST (warp)
-    - GraphQL (juniper)
-  - ws (warp)
+  - http ([warp](https://github.com/seanmonstar/warp))
+    - REST ([warp](https://github.com/seanmonstar/warp))
+    - GraphQL ([juniper, juniper_warp](https://github.com/graphql-rust/juniper))
+  - ws ([warp](https://github.com/seanmonstar/warp))
 - Database
-  - MongoDB (mongodb) `-> MongoDB Atlas`
+  - MongoDB ([mongodb](https://github.com/mongodb/mongo-rust-driver)) `-> MongoDB Atlas`
 - Auth
   - ( 独自lib? ) `-> `
