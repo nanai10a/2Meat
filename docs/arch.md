@@ -22,19 +22,19 @@
 
 - Frontend
   - http (Next.js) `-> Vercel`
-  - Discord (serenity, hhooking)
-    - Bot `-> `
-    - Webhook `-> `
-    - Slash Commands `-> `
-  - Twitter ( ? )
-    - ( ? )
+  - Discord
+    - Bot (serenity) `-> GCE`
+    - Webhook (hhooking) `-> `
+    - Slash Commands (hhooking) `-> `
+  - Twitter
+    - REST (egg-mode?) `-> `
+    - Webhook ( 独自lib? ) `-> `
 - Backend
-  - http ( ? )
-    - REST ( ? )
-    - GraphQL ( ? )
-  - ws ( ? )
+  - http (warp)
+    - REST (warp)
+    - GraphQL (juniper)
+  - ws (warp)
 - Database
-  - MongoDB ( ? ) `-> MongoDB Atlas`
-  - Redis ( ? ) `-> `
+  - MongoDB (mongodb) `-> MongoDB Atlas`
 - Auth
-  - ( ? ) `-> `
+  - ( 独自lib? ) `-> `
