@@ -40,3 +40,21 @@
   - ( 独自lib? ) `-> `
 
 GCEにdeployされる小systemはdocker-composeによって統括管理され, 維持を行う.
+
+### Arch
+
+CArchの有名な図を以下に示す.
+
+![](https://i.imgur.com/H1qkCGs.png)
+
+![](https://i.imgur.com/bW7Ka78.png)
+
+
+
+http/wsでrequestを受けてそれに返答をしないといけないため, 特にhttpは同期をとってPresenter/Viewの内容をresponseする必要がある.  
+今回考案したのはrequest-handlerでrequestIdを振りControllerに渡し, Viewの中でrequestIdを処理しhandlerにchannelを通じてデータを送る, といったやり方.  
+~~これがどう出るか~~
+
+wsは最初にinitial responseとしてrequestIdを送り返して受諾を通知し, idと共にasync的に返答を返す, といったものを検討している.
+
+ただ, requestIdは上位層には関係のない話なので`_`をprefixにしようかなと思っている(けどどうなんでしょうね).
